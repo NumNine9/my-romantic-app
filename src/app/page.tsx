@@ -275,7 +275,7 @@ export default function AdventCalendar() {
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
 
   // State to track current date for door availability logic
-  const [currentDate, setCurrentDate] = useState<Date>(new Date());
+  // const [currentDate, setCurrentDate] = useState<Date>(new Date());
 
   // Create a ref for the modal container
   const modalRef = useRef<HTMLDivElement>(null);
