@@ -350,7 +350,7 @@ export default function AdventCalendar() {
         {/* Header section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-2 text-balance">
-            31 Days of Sunshine for Lathitha
+            31 Days of Sunshine for Latti 🌞
           </h1>
           <p className="text-muted-foreground text-lg">
             Open one door each day to discover something special ✨
