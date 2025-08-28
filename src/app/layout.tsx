@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Just a something nyana for my ray of sunshine",
   openGraph: {
     title: "31 Days of Sunshine for Lathitha",
-    description: "A special journey of love and appreciation for my sunshine",
+    description: "Just a something nyana for my ray of sunshine",
     type: "website",
     url: "https://latti.netlify.app/", // Replace with your actual URL
     images: [
