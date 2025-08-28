@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react"; // React hooks for state an
 import { Card } from "@/components/ui/card"; // Shadcn/ui card component for styling
 import { Button } from "@/components/ui/button"; // Shadcn/ui button component
 import { Heart, Star, Gift, Calendar } from "lucide-react"; // Icon library for visual elements
-
+// import latti from "./latti.jpg";
 // Interface defining the structure of each advent calendar item
 interface AdventContent {
   day: number; // Day of the month (1-24)
@@ -345,8 +345,17 @@ export default function AdventCalendar() {
     : null;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-green-50 p-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-green-50 p-4 relative">
+      {/* Background Image with Low Opacity */}
+      <div className="fixed inset-0 z-0">
+        <img
+          src="/latti.jpg" // Update this path to your image
+          alt="Romantic background"
+          className="w-full h-full object-cover opacity-20" // opacity-20 = 20% opacity
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-2 text-balance">
