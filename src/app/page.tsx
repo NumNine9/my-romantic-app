@@ -20,250 +20,242 @@ const adventContent: AdventContent[] = [
   {
     day: 1,
     type: "verse",
-    title: "God's Love for You",
+    title: "A Refuge and Strength",
     content:
-      '"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord." - Romans 8:38-39',
+      '"God is our refuge and strength, an ever-present help in trouble." - Psalm 46:1',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 2,
     type: "love",
-    title: "Your Beautiful Smile",
+    title: "The Way You Encourage Me",
     content:
-      "I love how your smile has the power to light up my entire world. It's my favorite sight, no matter what kind of day I'm having.",
+      "I love how you believe in me even when I doubt myself. Your encouragement is the wind beneath my wings, giving me the courage to try harder and reach further.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 3,
     type: "memory",
-    title: "Our First Laugh Together",
+    title: "Getting Lost Together",
     content:
-      "Remember our first coffee date when you laughed so hard at my terrible joke that you nearly spilled your latte? That was the moment I knew your joy was something special I wanted in my life every day.",
+      "Remember that road trip where we took the 'scenic route' and ended up completely lost? Instead of frustration, we found laughter and a hidden little diner with the best pie. It taught me that with you, the detours are just as wonderful as the destination.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 4,
     type: "promise",
-    title: "Adventures Together",
+    title: "I Will Choose Gratitude",
     content:
-      "I promise to always seek new adventures with you, whether it's traveling to new places or finding magic in our ordinary days. Every moment with you is an adventure I cherish.",
+      "I promise to never take you for granted. I will wake up every day grateful for your presence in my life and find new ways to show you my appreciation.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 5,
     type: "verse",
-    title: "Perfect Love Casts Out Fear",
+    title: "The Peace of God",
     content:
-      '"There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love." - 1 John 4:18',
+      '"And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." - Philippians 4:7',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 6,
     type: "love",
-    title: "Your Generous Heart",
+    title: "Your Hand in Mine",
     content:
-      "I love how you always see the best in people and give so generously of your time and heart. Your kindness makes everyone around you feel valued and seen.",
+      "I love the simple, steady comfort of holding your hand. It feels like a silent promise that no matter what we face, we'll face it together.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 7,
     type: "memory",
-    title: "Dancing in the Kitchen",
+    title: "Building a Fort",
     content:
-      "That spontaneous morning when we danced while making breakfast - flour everywhere, off-key singing, and completely perfect happiness. I want a lifetime of those messy, beautiful moments with you.",
+      "That lazy Sunday we built a blanket fort in the living room like kids, complete with fairy lights and snacks. Inside our little castle, the outside world disappeared, and it was just us, full of silly, uncomplicated joy.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 8,
     type: "promise",
-    title: "Growing Together",
+    title: "To Keep Dating You",
     content:
-      "I promise to keep growing with you - to learn from you, to support your dreams, and to never stop becoming a better partner for you. Our growth together is my greatest aspiration.",
+      "I promise to never stop dating you. I will always make an effort to court you, to surprise you, and to make you feel pursued and desired, just as you are.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 9,
     type: "verse",
-    title: "Guard Your Heart",
+    title: "Trust in the Lord",
     content:
-      '"Above all else, guard your heart, for everything you do flows from it." - Proverbs 4:23',
+      '"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight." - Proverbs 3:5-6',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 10,
     type: "love",
-    title: "Your Inner Strength",
+    title: "Your Quiet Confidence",
     content:
-      "I love how you face challenges with grace and strength. Your resilience inspires me to be braver and reminds me that we can handle anything together.",
+      "I love the quiet confidence you carry. You don't need to be the loudest in the room; your strength and character speak for themselves in the most powerful way.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 11,
     type: "memory",
-    title: "Rainy Day Comfort",
+    title: "Our First Challenge Overcome",
     content:
-      "That stormy afternoon we spent reading together, sharing our favorite passages between comfortable silences. I've never felt more peaceful than in that moment with you.",
+      "Looking back on that first big challenge we faced as a couple. We were scared, but we held on tight to each other. Coming out on the other side stronger showed me that our love is resilient and built to last.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 12,
     type: "promise",
-    title: "I Will Always Listen",
+    title: "To Forgive Freely",
     content:
-      "I promise to always create space for your voice - to listen not just to your words, but to your heart. Your thoughts and feelings will always matter deeply to me.",
+      "I promise to offer forgiveness freely and quickly, just as I hope to receive it. I will not let pride or petty grievances build walls between us.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 13,
     type: "verse",
-    title: "The Nature of Love",
+    title: "A Crown of Beauty",
     content:
-      '"Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs." - 1 Corinthians 13:4-5',
+      '"...to bestow on them a crown of beauty instead of ashes, the oil of joy instead of mourning, and a garment of praise instead of a spirit of despair." - Isaiah 61:3',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 14,
     type: "love",
-    title: "Your Contagious Laughter",
+    title: "The Way You Say My Name",
     content:
-      "I love how your laughter fills a room and makes everyone around you smile. It's the most beautiful sound, and I never tire of hearing it.",
+      "I love the way you say my name. It sounds different coming from you—like a secret, a prayer, and a homecoming, all at once.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 15,
     type: "memory",
-    title: "Sunset Walks",
+    title: "Stargazing",
     content:
-      "Walking hand in hand as the sun dipped below the horizon, talking about our dreams and fears. Those quiet moments with you feel like coming home.",
+      "Laying on a blanket in the cool grass, pointing out constellations we didn't know the names of, and making up our own. Under that vast, infinite sky, I felt incredibly small and yet entirely significant because I was there with you.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 16,
     type: "promise",
-    title: "You Are My Home",
+    title: "To Protect Your Peace",
     content:
-      "I promise that wherever life takes us, I will always work to make you feel safe, loved, and cherished. With you, anywhere feels like home.",
+      "I promise to be a source of peace in your life. I will strive to create a home and a relationship that is your sanctuary from the chaos of the world.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 17,
     type: "verse",
-    title: "Unquenchable Love",
+    title: "Plans to Prosper You",
     content:
-      '"Many waters cannot quench love; rivers cannot sweep it away. If one were to give all the wealth of one\'s house for love, it would be utterly scorned." - Song of Songs 8:7',
+      '"For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future." - Jeremiah 29:11',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 18,
     type: "love",
-    title: "Your Beautiful Mind",
+    title: "Your Passionate Spirit",
     content:
-      "I love how you see the world - your unique perspective, your thoughtful insights, and the way you constantly teach me to see things differently. Your mind is beautiful.",
+      "I love the fire in your spirit when you talk about something you're passionate about. Your eyes light up, and your energy is contagious. It's absolutely captivating.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 19,
     type: "memory",
-    title: "Midnight Truths",
+    title: "Learning Something New",
     content:
-      "Those late-night conversations where we shared our deepest hopes and fears. Thank you for trusting me with your heart. Those moments are sacred to me.",
+      "That time we tried to learn how to cook a complicated dish together. The kitchen was a disaster, and we got most of the steps wrong, but we had so much fun failing together. It ended up being our favorite meal.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 20,
     type: "promise",
-    title: "I Will Celebrate You",
+    title: "To Be Fully Present",
     content:
-      "I promise to celebrate every part of you - your victories, your strengths, and even your imperfections. You deserve to be celebrated every single day.",
+      "I promise to put down my phone, turn off the screen, and be fully present with you. The time we have together is too precious to be diluted by distractions.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 21,
     type: "verse",
-    title: "Chosen and Loved",
+    title: "The Lord is My Shepherd",
     content:
-      '"But you are a chosen people, a royal priesthood, a holy nation, God\'s special possession, that you may declare the praises of him who called you out of darkness into his wonderful light." - 1 Peter 2:9',
+      '"The Lord is my shepherd, I lack nothing. He makes me lie down in green pastures, he leads me beside quiet waters..." - Psalm 23:1-2',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 22,
     type: "love",
-    title: "Your Compassionate Soul",
+    title: "Your Thoughtfulness",
     content:
-      "I love how deeply you care for others. Your compassion makes the world a better place, and it inspires me to be more generous with my love too.",
+      "I love how you remember the little things—my favorite snack, that story I told once, the song I said I liked. It makes me feel truly known and deeply cared for.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 23,
     type: "memory",
-    title: "The Little Moments",
+    title: "The Comfort of Silence",
     content:
-      "It's not just the big moments I cherish, but the small ones too: your morning smile, the way you hum when you're focused, how you make ordinary days feel extraordinary.",
+      "Sitting together in complete silence, both lost in our own books or thoughts, and feeling perfectly connected and content. We don't always need words to speak the language of our hearts.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 24,
     type: "promise",
-    title: "Through Every Season",
+    title: "To Laugh With You Every Day",
     content:
-      "I promise to love you through all of life's seasons - in joy and challenge, in laughter and tears, in sunshine and storm. My love for you is constant and true.",
+      "I promise to find a reason to laugh with you every single day. Your joy is my joy, and I want to fill our lives with lightness and humor.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 25,
     type: "verse",
-    title: "Strength and Peace",
+    title: "Be Strong and Courageous",
     content:
-      '"The Lord gives strength to his people; the Lord blesses his people with peace." - Psalm 29:11',
+      '"Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go." - Joshua 1:9',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 26,
     type: "love",
-    title: "Your Growing Light",
+    title: "The Sound of Your Voice",
     content:
-      "I love watching you grow and evolve. The woman you're becoming is even more amazing than I could have imagined, and I'm grateful to witness your journey.",
+      "I love the sound of your voice, whether you're telling me about your day, whispering a secret, or just calling my name from another room. It's my favorite melody.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 27,
     type: "memory",
-    title: "Our First 'I Love You'",
+    title: "Our Song",
     content:
-      "I'll never forget the moment we first said 'I love you.' My heart knew it was true long before my words caught up, but saying it aloud made everything feel complete.",
+      "The first time we heard 'our song' on the radio and you immediately turned it up, grabbed my hand, and started singing to me. In that moment, everything felt perfect and aligned.",
     icon: <Gift className="w-5 h-5" />,
   },
   {
     day: 28,
     type: "promise",
-    title: "Your Biggest supporter",
+    title: "To Pray For and With You",
     content:
-      "I promise to always be your biggest supporter and safest place to land. Dream big, my love - I'll be here cheering you on every step of the way.",
+      "I promise to pray for you always, and to pray with you often. I will lift up our hopes, our fears, and our gratitude together, seeking guidance for our journey.",
     icon: <Calendar className="w-5 h-5" />,
   },
   {
     day: 29,
     type: "verse",
-    title: "New Beginnings",
+    title: "Faith, Hope, and Love",
     content:
-      '"Because of the Lord\'s great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness." - Lamentations 3:22-23',
+      '"And now these three remain: faith, hope and love. But the greatest of these is love." - 1 Corinthians 13:13',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 30,
     type: "love",
-    title: "My Greatest Gift",
+    title: "Your Entire Being",
     content:
-      "You are the greatest gift I never knew I needed. Every day with you reminds me how blessed I am to have your love in my life.",
+      "I love you—not just for what you are, but for who I am when I'm with you. You make me a better, happier, more complete person. I love every version of us.",
     icon: <Heart className="w-5 h-5" />,
-  },
-  {
-    day: 31,
-    type: "promise",
-    title: "Forever Yours",
-    content:
-      "I promise to choose you every day - to nurture our love, to prioritize our connection, and to never take for granted the incredible woman you are. I'm forever yours.",
-    icon: <Calendar className="w-5 h-5" />,
   },
 ];
 
@@ -282,7 +274,7 @@ export default function AdventCalendar() {
 
   // Effect to load saved state from localStorage when component mounts
   useEffect(() => {
-    const saved = localStorage.getItem("advent-opened-doors");
+    const saved = localStorage.getItem("advents-opened-doors");
     if (saved) {
       // Parse saved data and convert array back to Set
       setOpenedDoors(new Set(JSON.parse(saved)));
@@ -292,8 +284,13 @@ export default function AdventCalendar() {
   // Function to check if a specific door can be opened based on current date
   const canOpenDoor = (day: number) => {
     const today = new Date();
-    const december = new Date(today.getFullYear(), 7, day); // December is month 11 (0-indexed)
-    return today >= december || today.getMonth() === 11; // Allow if current date is on/after door date OR it's December
+    const currentYear = today.getFullYear();
+
+    // September is month 8 (0-indexed: January=0, September=8)
+    const doorDate = new Date(currentYear, 8, day);
+
+    // Allow if current date is on/after the door date AND we're in September
+    return today >= doorDate && today.getMonth() === 8;
   };
 
   // Function to handle door opening logic
@@ -308,7 +305,7 @@ export default function AdventCalendar() {
 
     // Persist the opened doors to localStorage for future visits
     localStorage.setItem(
-      "advent-opened-doors",
+      "advents-opened-doors",
       JSON.stringify([...newOpenedDoors]) // Convert Set to array for storage
     );
 
@@ -359,7 +356,7 @@ export default function AdventCalendar() {
         {/* Header section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-2 text-balance">
-            31 Days of Sunshine for Latti 🌞
+            30 Days of Sunshine for Latti 🌞
           </h1>
           <p className="text-muted-foreground text-lg">
             Open one door each day to discover something special ✨
@@ -385,7 +382,7 @@ export default function AdventCalendar() {
                       : "bg-muted border-muted-foreground/20 cursor-not-allowed opacity-60" // Locked style
                   }
                 `}
-                onClick={() => canOpen && openDoor(item.day)} // Only clickable if canOpen
+                onClick={() => canOpen || openDoor(item.day)} // Only clickable if canOpen
               >
                 <div className="h-full flex flex-col items-center justify-center p-2">
                   {isOpened ? (
