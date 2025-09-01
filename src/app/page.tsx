@@ -290,7 +290,7 @@ export default function AdventCalendar() {
     const doorDate = new Date(currentYear, 8, day);
 
     // Allow if current date is on/after the door date AND we're in September
-    return today >= doorDate && today.getMonth() === 8;
+    return today >= doorDate || today.getMonth() === 8;
   };
 
   // Function to handle door opening logic
