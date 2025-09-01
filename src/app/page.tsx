@@ -290,7 +290,7 @@ export default function AdventCalendar() {
     const doorDate = new Date(currentYear, 8, day);
 
     // Allow if current date is on/after the door date AND we're in September
-    return today >= doorDate || today.getMonth() === 8;
+    return today >= doorDate && today.getMonth() === 8;
   };
 
   // Function to handle door opening logic
@@ -382,7 +382,7 @@ export default function AdventCalendar() {
                       : "bg-muted border-muted-foreground/20 cursor-not-allowed opacity-60" // Locked style
                   }
                 `}
-                onClick={() => canOpen || openDoor(item.day)} // Only clickable if canOpen
+                onClick={() => canOpen && openDoor(item.day)} // Only clickable if canOpen
               >
                 <div className="h-full flex flex-col items-center justify-center p-2">
                   {isOpened ? (
