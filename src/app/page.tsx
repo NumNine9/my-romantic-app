@@ -4,12 +4,12 @@ import type React from "react"; // Import React types for TypeScript
 import { useState, useEffect, useRef } from "react"; // React hooks for state and side effects
 import { Card } from "@/components/ui/card"; // Shadcn/ui card component for styling
 import { Button } from "@/components/ui/button"; // Shadcn/ui button component
-import { Heart, Star, Gift, Calendar } from "lucide-react"; // Icon library for visual elements
+import { Heart, Star, Laugh, Smile } from "lucide-react"; // Icon library for visual elements
 // import latti from "./latti.jpg";
 // Interface defining the structure of each advent calendar item
 interface AdventContent {
-  day: number; // Day of the month (1-24)
-  type: "verse" | "love" | "memory" | "promise"; // Category of content
+  day: number; // Day of the month (1-31)
+  type: "verse" | "affirmation" | "dad-joke" | "emoji-of-the-day"; // Category of content
   title: string; // Short title for the content
   content: string; // The actual message/content
   icon: React.ReactNode; // React icon component
@@ -27,27 +27,26 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 2,
-    type: "love",
-    title: "The Way You Encourage Me",
+    type: "affirmation",
+    title: "You Are Capable",
     content:
-      "I love how you believe in me even when I doubt myself. Your encouragement is the wind beneath my wings, giving me the courage to try harder and reach further.",
+      "Today, you are capable of handling whatever comes your way. Trust in your strength and wisdom.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 3,
-    type: "memory",
-    title: "Getting Lost Together",
-    content:
-      "Remember that road trip where we took the 'scenic route' and ended up completely lost? Instead of frustration, we found laughter and a hidden little diner with the best pie. It taught me that with you, the detours are just as wonderful as the destination.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "Why did the scarecrow win an award?",
+    content: "Because he was outstanding in his field! 🌾",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 4,
-    type: "promise",
-    title: "I Will Choose Gratitude",
+    type: "emoji-of-the-day",
+    title: "Sparkles for Your Spirit",
     content:
-      "I promise to never take you for granted. I will wake up every day grateful for your presence in my life and find new ways to show you my appreciation.",
-    icon: <Calendar className="w-5 h-5" />,
+      "✨ - May your day be filled with magical moments and sparkling joy!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 5,
@@ -59,27 +58,25 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 6,
-    type: "love",
-    title: "Your Hand in Mine",
+    type: "affirmation",
+    title: "You Are Growing",
     content:
-      "I love the simple, steady comfort of holding your hand. It feels like a silent promise that no matter what we face, we'll face it together.",
+      "Every challenge you face is helping you grow stronger and more resilient. You're doing better than you think.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 7,
-    type: "memory",
-    title: "Building a Fort",
-    content:
-      "That lazy Sunday we built a blanket fort in the living room like kids, complete with fairy lights and snacks. Inside our little castle, the outside world disappeared, and it was just us, full of silly, uncomplicated joy.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "What do you call a fake noodle?",
+    content: "An impasta! 🍝",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 8,
-    type: "promise",
-    title: "To Keep Dating You",
-    content:
-      "I promise to never stop dating you. I will always make an effort to court you, to surprise you, and to make you feel pursued and desired, just as you are.",
-    icon: <Calendar className="w-5 h-5" />,
+    type: "emoji-of-the-day",
+    title: "Coffee Power",
+    content: "☕ - Fuel for amazing people having amazing days. That's you!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 9,
@@ -91,27 +88,26 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 10,
-    type: "love",
-    title: "Your Quiet Confidence",
+    type: "affirmation",
+    title: "You Are Loved",
     content:
-      "I love the quiet confidence you carry. You don't need to be the loudest in the room; your strength and character speak for themselves in the most powerful way.",
+      "You are deeply loved and valued exactly as you are today. Your presence makes a difference in this world.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 11,
-    type: "memory",
-    title: "Our First Challenge Overcome",
-    content:
-      "Looking back on that first big challenge we faced as a couple. We were scared, but we held on tight to each other. Coming out on the other side stronger showed me that our love is resilient and built to last.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "Why don't scientists trust atoms?",
+    content: "Because they make up everything! 🔬",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 12,
-    type: "promise",
-    title: "To Forgive Freely",
+    type: "emoji-of-the-day",
+    title: "Rainbow Reminder",
     content:
-      "I promise to offer forgiveness freely and quickly, just as I hope to receive it. I will not let pride or petty grievances build walls between us.",
-    icon: <Calendar className="w-5 h-5" />,
+      "🌈 - Remember: after every storm comes beauty and color. You've got this!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 13,
@@ -123,27 +119,26 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 14,
-    type: "love",
-    title: "The Way You Say My Name",
+    type: "affirmation",
+    title: "You Are Enough",
     content:
-      "I love the way you say my name. It sounds different coming from you—like a secret, a prayer, and a homecoming, all at once.",
+      "You don't need to be perfect to be worthy of love and respect. You are enough exactly as you are.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 15,
-    type: "memory",
-    title: "Stargazing",
-    content:
-      "Laying on a blanket in the cool grass, pointing out constellations we didn't know the names of, and making up our own. Under that vast, infinite sky, I felt incredibly small and yet entirely significant because I was there with you.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "What do you call a bear with no teeth?",
+    content: "A gummy bear! 🧸",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 16,
-    type: "promise",
-    title: "To Protect Your Peace",
+    type: "emoji-of-the-day",
+    title: "Bookworm Energy",
     content:
-      "I promise to be a source of peace in your life. I will strive to create a home and a relationship that is your sanctuary from the chaos of the world.",
-    icon: <Calendar className="w-5 h-5" />,
+      "📚 - Whether learning or escaping, may you find wisdom and adventure in today's pages!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 17,
@@ -155,27 +150,26 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 18,
-    type: "love",
-    title: "Your Passionate Spirit",
+    type: "affirmation",
+    title: "You Are Brave",
     content:
-      "I love the fire in your spirit when you talk about something you're passionate about. Your eyes light up, and your energy is contagious. It's absolutely captivating.",
+      "Courage isn't the absence of fear - it's moving forward despite it. And you, my friend, are incredibly brave.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 19,
-    type: "memory",
-    title: "Learning Something New",
-    content:
-      "That time we tried to learn how to cook a complicated dish together. The kitchen was a disaster, and we got most of the steps wrong, but we had so much fun failing together. It ended up being our favorite meal.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "Why did the math book look so sad?",
+    content: "Because it had too many problems! 📚",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 20,
-    type: "promise",
-    title: "To Be Fully Present",
+    type: "emoji-of-the-day",
+    title: "Adventure Awaits",
     content:
-      "I promise to put down my phone, turn off the screen, and be fully present with you. The time we have together is too precious to be diluted by distractions.",
-    icon: <Calendar className="w-5 h-5" />,
+      "🗺️ - May your day be filled with exciting discoveries and happy adventures!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 21,
@@ -187,59 +181,56 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 22,
-    type: "love",
-    title: "Your Thoughtfulness",
+    type: "affirmation",
+    title: "You Are Resilient",
     content:
-      "I love how you remember the little things—my favorite snack, that story I told once, the song I said I liked. It makes me feel truly known and deeply cared for.",
+      "You have survived 100% of your bad days so far. That's a perfect track record! Keep going.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 23,
-    type: "memory",
-    title: "The Comfort of Silence",
-    content:
-      "Sitting together in complete silence, both lost in our own books or thoughts, and feeling perfectly connected and content. We don't always need words to speak the language of our hearts.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "What do you call a sleeping bull?",
+    content: "A bulldozer! 🐄",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 24,
-    type: "promise",
-    title: "To Laugh With You Every Day",
-    content:
-      "I promise to find a reason to laugh with you every single day. Your joy is my joy, and I want to fill our lives with lightness and humor.",
-    icon: <Calendar className="w-5 h-5" />,
+    type: "emoji-of-the-day",
+    title: "Holiday Cheer",
+    content: "🎄 - Wishing you warmth, wonder, and magical moments today!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 25,
     type: "verse",
-    title: "Be Strong and Courageous",
+    title: "The Greatest Gift",
     content:
-      '"Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go." - Joshua 1:9',
+      '"For to us a child is born, to us a son is given, and the government will be on his shoulders. And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace." - Isaiah 9:6',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 26,
-    type: "love",
-    title: "The Sound of Your Voice",
+    type: "affirmation",
+    title: "You Are Appreciated",
     content:
-      "I love the sound of your voice, whether you're telling me about your day, whispering a secret, or just calling my name from another room. It's my favorite melody.",
+      "Your presence in this world matters. The unique light you bring is noticed and appreciated.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 27,
-    type: "memory",
-    title: "Our Song",
-    content:
-      "The first time we heard 'our song' on the radio and you immediately turned it up, grabbed my hand, and started singing to me. In that moment, everything felt perfect and aligned.",
-    icon: <Gift className="w-5 h-5" />,
+    type: "dad-joke",
+    title: "Why don't eggs tell jokes?",
+    content: "They'd crack each other up! 🥚",
+    icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 28,
-    type: "promise",
-    title: "To Pray For and With You",
+    type: "emoji-of-the-day",
+    title: "Cozy Vibes",
     content:
-      "I promise to pray for you always, and to pray with you often. I will lift up our hopes, our fears, and our gratitude together, seeking guidance for our journey.",
-    icon: <Calendar className="w-5 h-5" />,
+      "🛋️ - Perfect day for comfort, warmth, and taking it easy. You've earned it!",
+    icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 29,
@@ -251,11 +242,18 @@ const adventContent: AdventContent[] = [
   },
   {
     day: 30,
-    type: "love",
-    title: "Your Entire Being",
+    type: "affirmation",
+    title: "You Are Making Progress",
     content:
-      "I love you—not just for what you are, but for who I am when I'm with you. You make me a better, happier, more complete person. I love every version of us.",
+      "Even when it feels like you're standing still, you're growing and moving forward. Trust the process.",
     icon: <Heart className="w-5 h-5" />,
+  },
+  {
+    day: 31,
+    type: "dad-joke",
+    title: "What's a snowman's favorite breakfast?",
+    content: "Frosted flakes! ❄️",
+    icon: <Laugh className="w-5 h-5" />,
   },
 ];
 
@@ -286,13 +284,12 @@ export default function AdventCalendar() {
     const today = new Date();
     const currentYear = today.getFullYear();
 
-    // September is month 8 (0-indexed: January=0, September=8)
-    const doorDate = new Date(currentYear, 8, day);
+    // October is month 9 (0-indexed: January=0, October=9)
+    const doorDate = new Date(currentYear, 9, day);
 
-    // Allow if current date is on/after the door date AND we're in September
-    return today >= doorDate && today.getMonth() === 8;
+    // Allow if current date is on/after the door date AND we're in October
+    return today >= doorDate && today.getMonth() === 9;
   };
-
   // Function to handle door opening logic
   const openDoor = (day: number) => {
     if (!canOpenDoor(day)) return; // Prevent opening if not allowed
@@ -325,11 +322,11 @@ export default function AdventCalendar() {
     switch (type) {
       case "verse":
         return "bg-primary text-primary-foreground"; // Primary theme colors
-      case "love":
+      case "affirmation":
         return "bg-red-500 text-white"; // Red for love
-      case "memory":
+      case "dad-joke":
         return "bg-secondary text-secondary-foreground"; // Secondary theme colors
-      case "promise":
+      case "emoji-of-the-day":
         return "bg-green-600 text-white"; // Green for promises
       default:
         return "bg-muted text-muted-foreground"; // Default muted colors
@@ -356,7 +353,7 @@ export default function AdventCalendar() {
         {/* Header section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-2 text-balance">
-            30 Days of Sunshine for Latti 🌞
+            31 Days of Sunshine for Latti 🌞
           </h1>
           <p className="text-muted-foreground text-lg">
             Open one door each day to discover something special ✨

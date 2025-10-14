@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "30 Days of Sunshine",
+  title: "31 Days of Sunshine",
   description: "Just a something nyana for my ray of sunshine",
   openGraph: {
-    title: "30 Days of Sunshine for Lathitha",
+    title: "31 Days of Sunshine for Lathitha",
     description: "Just a something nyana for my ray of sunshine",
     type: "website",
     url: "https://latti.netlify.app/", // Replace with your actual URL
