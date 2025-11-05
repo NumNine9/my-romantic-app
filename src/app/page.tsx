@@ -20,240 +20,230 @@ const adventContent: AdventContent[] = [
   {
     day: 1,
     type: "verse",
-    title: "A Refuge and Strength",
+    title: "A New Beginning",
     content:
-      '"God is our refuge and strength, an ever-present help in trouble." - Psalm 46:1',
+      '"See, I am doing a new thing! Now it springs up; do you not perceive it? I am making a way in the wilderness and streams in the wasteland." - Isaiah 43:19',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 2,
     type: "affirmation",
-    title: "You Are Capable",
+    title: "Your Journey Matters",
     content:
-      "Today, you are capable of handling whatever comes your way. Trust in your strength and wisdom.",
+      "Where you are right now is a necessary step. Trust the path you are on.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 3,
     type: "dad-joke",
-    title: "Why did the scarecrow win an award?",
-    content: "Because he was outstanding in his field! 🌾",
+    title: "Why did the coffee file a police report?",
+    content: "It got mugged! ☕",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 4,
     type: "emoji-of-the-day",
-    title: "Sparkles for Your Spirit",
-    content:
-      "✨ - May your day be filled with magical moments and sparkling joy!",
+    title: "Shine Bright",
+    content: "🌟 - Don't forget to let your own unique light shine today.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 5,
     type: "verse",
-    title: "The Peace of God",
+    title: "Strength for the Weary",
     content:
-      '"And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." - Philippians 4:7',
+      '"But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint." - Isaiah 40:31',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 6,
     type: "affirmation",
-    title: "You Are Growing",
+    title: "You Are a Source of Good",
     content:
-      "Every challenge you face is helping you grow stronger and more resilient. You're doing better than you think.",
+      "Your simple acts of kindness create ripples of good in the world.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 7,
     type: "dad-joke",
-    title: "What do you call a fake noodle?",
-    content: "An impasta! 🍝",
+    title: "What do you call a factory that makes okay products?",
+    content: "A satisfactory! 🏭",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 8,
     type: "emoji-of-the-day",
-    title: "Coffee Power",
-    content: "☕ - Fuel for amazing people having amazing days. That's you!",
+    title: "Plant a Seed",
+    content:
+      "🌱 - Nurture a good idea, a kind word, or a hopeful thought today.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 9,
     type: "verse",
-    title: "Trust in the Lord",
+    title: "The Lord's Unfailing Love",
     content:
-      '"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight." - Proverbs 3:5-6',
+      '"The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing." - Zephaniah 3:17',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 10,
     type: "affirmation",
-    title: "You Are Loved",
+    title: "Your Feelings Are Valid",
     content:
-      "You are deeply loved and valued exactly as you are today. Your presence makes a difference in this world.",
+      "You don't have to be okay all the time. It's okay to feel what you feel.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 11,
     type: "dad-joke",
-    title: "Why don't scientists trust atoms?",
-    content: "Because they make up everything! 🔬",
+    title: "Why did the bicycle fall over?",
+    content: "Because it was two-tired! 🚲",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 12,
     type: "emoji-of-the-day",
-    title: "Rainbow Reminder",
-    content:
-      "🌈 - Remember: after every storm comes beauty and color. You've got this!",
+    title: "Find Your Anchor",
+    content: "⚓ - Stay grounded in what brings you peace and stability.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 13,
     type: "verse",
-    title: "A Crown of Beauty",
+    title: "Cast Your Cares",
     content:
-      '"...to bestow on them a crown of beauty instead of ashes, the oil of joy instead of mourning, and a garment of praise instead of a spirit of despair." - Isaiah 61:3',
+      '"Cast all your anxiety on him because he cares for you." - 1 Peter 5:7',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 14,
     type: "affirmation",
-    title: "You Are Enough",
+    title: "You Are Under Construction",
     content:
-      "You don't need to be perfect to be worthy of love and respect. You are enough exactly as you are.",
+      "It's okay to be a work in progress. The most beautiful things are.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 15,
     type: "dad-joke",
-    title: "What do you call a bear with no teeth?",
-    content: "A gummy bear! 🧸",
+    title: "What do you call a fish wearing a crown?",
+    content: "King of the sea! 🐠",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 16,
     type: "emoji-of-the-day",
-    title: "Bookworm Energy",
+    title: "Warm Your Heart",
     content:
-      "📚 - Whether learning or escaping, may you find wisdom and adventure in today's pages!",
+      "🕯️ - A little warmth and light can be found in the simplest moments.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 17,
     type: "verse",
-    title: "Plans to Prosper You",
+    title: "The Light of the World",
     content:
-      '"For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future." - Jeremiah 29:11',
+      '"When Jesus spoke again to the people, he said, "I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life."" - John 8:12',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 18,
     type: "affirmation",
-    title: "You Are Brave",
-    content:
-      "Courage isn't the absence of fear - it's moving forward despite it. And you, my friend, are incredibly brave.",
+    title: "You Are a Good Friend",
+    content: "Your compassion and listening ear are gifts to those around you.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 19,
     type: "dad-joke",
-    title: "Why did the math book look so sad?",
-    content: "Because it had too many problems! 📚",
+    title: "Why couldn't the leopard play hide and seek?",
+    content: "Because he was always spotted! 🐆",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 20,
     type: "emoji-of-the-day",
-    title: "Adventure Awaits",
+    title: "Look Up",
     content:
-      "🗺️ - May your day be filled with exciting discoveries and happy adventures!",
+      "🌌 - Remember to look up and appreciate the vastness and wonder around you.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 21,
     type: "verse",
-    title: "The Lord is My Shepherd",
+    title: "The Gift of Rest",
     content:
-      '"The Lord is my shepherd, I lack nothing. He makes me lie down in green pastures, he leads me beside quiet waters..." - Psalm 23:1-2',
+      '"Come to me, all you who are weary and burdened, and I will give you rest." - Matthew 11:28',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 22,
     type: "affirmation",
-    title: "You Are Resilient",
+    title: "You Are Allowed to Rest",
     content:
-      "You have survived 100% of your bad days so far. That's a perfect track record! Keep going.",
+      "Your worth is not measured by your productivity. Taking a break is a necessary part of life.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 23,
     type: "dad-joke",
-    title: "What do you call a sleeping bull?",
-    content: "A bulldozer! 🐄",
+    title: "What do you call a cow with no legs?",
+    content: "Ground beef! 🐄",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 24,
     type: "emoji-of-the-day",
-    title: "Holiday Cheer",
-    content: "🎄 - Wishing you warmth, wonder, and magical moments today!",
+    title: "Silent Night",
+    content: "🌙 - May you find a moment of quiet peace and stillness tonight.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 25,
     type: "verse",
-    title: "The Greatest Gift",
+    title: "A Savior is Born",
     content:
-      '"For to us a child is born, to us a son is given, and the government will be on his shoulders. And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace." - Isaiah 9:6',
+      '"Today in the town of David a Savior has been born to you; he is the Messiah, the Lord." - Luke 2:11',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 26,
     type: "affirmation",
-    title: "You Are Appreciated",
-    content:
-      "Your presence in this world matters. The unique light you bring is noticed and appreciated.",
+    title: "You Bring Joy",
+    content: "Your laughter and smile are contagious gifts to the world.",
     icon: <Heart className="w-5 h-5" />,
   },
   {
     day: 27,
     type: "dad-joke",
-    title: "Why don't eggs tell jokes?",
-    content: "They'd crack each other up! 🥚",
+    title: "Why did the tomato turn red?",
+    content: "Because it saw the salad dressing! 🍅",
     icon: <Laugh className="w-5 h-5" />,
   },
   {
     day: 28,
     type: "emoji-of-the-day",
-    title: "Cozy Vibes",
+    title: "Reflect and Dream",
     content:
-      "🛋️ - Perfect day for comfort, warmth, and taking it easy. You've earned it!",
+      "💭 - A perfect day to look back with gratitude and forward with hope.",
     icon: <Smile className="w-5 h-5" />,
   },
   {
     day: 29,
     type: "verse",
-    title: "Faith, Hope, and Love",
+    title: "Perfect Love",
     content:
-      '"And now these three remain: faith, hope and love. But the greatest of these is love." - 1 Corinthians 13:13',
+      '"There is no fear in love. But perfect love drives out fear..." - 1 John 4:18',
     icon: <Star className="w-5 h-5" />,
   },
   {
     day: 30,
     type: "affirmation",
-    title: "You Are Making Progress",
+    title: "You Are Heard",
     content:
-      "Even when it feels like you're standing still, you're growing and moving forward. Trust the process.",
+      "Your voice, your story, and your perspective matter. Don't be afraid to share them.",
     icon: <Heart className="w-5 h-5" />,
-  },
-  {
-    day: 31,
-    type: "dad-joke",
-    title: "What's a snowman's favorite breakfast?",
-    content: "Frosted flakes! ❄️",
-    icon: <Laugh className="w-5 h-5" />,
   },
 ];
 
@@ -353,7 +343,7 @@ export default function AdventCalendar() {
         {/* Header section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-primary mb-2 text-balance">
-            31 Days of Sunshine for Latti 🌞
+            30 Days of Sunshine for Latti 🌞
           </h1>
           <p className="text-muted-foreground text-lg">
             Open one door each day to discover something special ✨
